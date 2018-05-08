@@ -8,6 +8,7 @@ See [src](src) folder.
 - No `any`.
 - No `Function`.
 - No `Object`.
+- No `declare`.
 - 100% Type Coverage.
 
 ----
