@@ -5,9 +5,7 @@ See [src](src) folder.
 
 ### Rules:
 
-- No `any`.
-- No `Function`.
-- No `Object`.
+- No `any`, `Function`, `Object`, `$Subtype`, `$Supertype`.
 - 100% Type Coverage.
 - No `declare`.
 - No `/*:: */` comments.
@@ -20,4 +18,10 @@ See [src](src) folder.
 git clone https://github.com/Bannerets/break-flowtype.git break-flowtype
 cd break-flowtype
 npm install
+```
+
+#### Run example:
+
+```console
+$ npx babel-node src/<file-name>
 ```
