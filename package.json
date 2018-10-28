@@ -6,13 +6,11 @@
   "private": true,
   "scripts": {
     "clean": "rimraf dist/",
-    "flow": "flow check",
-    "lint": "eslint . --max-warnings 0",
+    "flow": "flow check --include-warnings --max-warnings 0",
     "types": "flow-copy-source src dist",
     "build": "babel src/ -d dist/ && npm run types",
-    "test": "npm run flow && npm run lint",
+    "test": "npm run flow",
     "prepare": "npm run clean && npm run build",
-    "prepack": "npm test",
     "start": "npm run build && node dist"
   },
   "files": [
